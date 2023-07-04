@@ -1,0 +1,27 @@
+# Dependency directories
+/node_modules
+
+# Build artifacts
+/build
+/dist
+.angular
+# Environment files
+.env
+/.angular
+# Log files
+*.log
+
+# macOS-specific files
+.DS_Store
+
+# IDE and editor files
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Operating System files
+Thumbs.db
+ehthumbs.db
+.DS_Store
+Desktop.ini
