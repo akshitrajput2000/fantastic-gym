@@ -1,10 +1,10 @@
 FROM node:18 AS builder
 
-WORKDIR /app/backend
+WORKDIR /app/backend/
 
 COPY package.json ./
 
-RUN npm install
+RUN npm install -f
 
 COPY . .
 

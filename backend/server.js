@@ -13,14 +13,14 @@ const initDatabase = async () => {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         };
-        const client = new MongoClient(process.env.MONGO_SRV, options);
+        const client = new MongoClient(String(process.env.MONGO_SRV), options);
         await client.connect();
 
         console.log("MongoDB Atlas connected successfully!");
 
         global.db = client.db("gymusers");
     } catch (error) {
-        console.error("Error connecting to MongoDB Atlas:", error);
+        console.log("Error connecting to MongoDB Atlas:", error);
     }
 };
 
